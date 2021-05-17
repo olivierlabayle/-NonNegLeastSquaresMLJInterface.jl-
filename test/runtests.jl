@@ -1,4 +1,4 @@
-using GenesInteraction: NonNegativeLeastSquareRegressor
+using NonNegLeastSquaresMLJInterface: NonNegativeLeastSquareRegressor
 using MLJBase
 using Random 
 using Test
