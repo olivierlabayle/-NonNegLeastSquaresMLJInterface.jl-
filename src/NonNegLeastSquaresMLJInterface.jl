@@ -34,7 +34,10 @@ end
 
 function MLJModelInterface.fit(m::NonNegativeLeastSquareRegressor, verbosity::Int, X, y)
     X = augment_X(MLJModelInterface.matrix(X), m.fit_intercept)
-    fitresult = vec(nonneg_lsq(X, y))
+    fitresult = vec(nonneg_lsq(X, y; 
+                                alg=m.alg,
+                                variant=m.variant,
+                                gram=m.gram))
     cache = nothing
     report = NamedTuple{}()
     return (fitresult, cache, report)
@@ -63,7 +66,7 @@ const ALL_MODELS = Union{NonNegativeLeastSquareRegressor}
 
 MLJModelInterface.metadata_pkg.(ALL_MODELS,
     name       = "NonNegLeastSquares",
-    uuid       = "b7351bd1-99d9-5c5d-8786-f205a815c4d7",
+    uuid       = "b7351bd1-99d9-5c5d-8786-f205a815c4d",
     url        = "https://github.com/ahwillia/NonNegLeastSquares.jl",
     julia      = true,
     license    = "MIT",
@@ -77,7 +80,7 @@ MLJModelInterface.metadata_model(NonNegativeLeastSquareRegressor,
     output_scitype   = MLJModelInterface.Table(MLJModelInterface.Continuous),
     supports_weights = false,
     descr            = "A non negative least square regressor model",
-	load_path        = "NonNegLeastSquares.non_neg_least_square.NonNegativeLeastSquareRegressor"
+	load_path        = "NonNegLeastSquaresMLJInterface.NonNegativeLeastSquareRegressor"
     )
 
 
