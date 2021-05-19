@@ -1,0 +1,12 @@
+name = "NonNegLeastSquaresMLJInterface"
+uuid = "548c1776-ba68-4672-b53d-6583dd12d8ca"
+authors = ["olivierlabayle"]
+version = "0.1.0"
+
+[deps]
+MLJModelInterface = "e80e1ace-859a-464e-9ed9-23947d8ae3ea"
+NonNegLeastSquares = "b7351bd1-99d9-5c5d-8786-f205a815c4d7"
+
+[compat]
+MLJModelInterface = "1.0.0"
+NonNegLeastSquares = "0.4.0"
