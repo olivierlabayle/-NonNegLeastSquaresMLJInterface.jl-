@@ -1,4 +1,4 @@
-![CI](https://github.com/olivierlabayle/NonNegLeastSquaresMLJInterface.jl/blob/main/.github/workflows/main.yml/badge.svg)
+![CI](https://github.com/olivierlabayle/NonNegLeastSquaresMLJInterface.jl/actions/workflows/main.yml/badge.svg)
 
 # NonNegLeastSquaresMLJInterface.jl
 
