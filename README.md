@@ -1,3 +1,5 @@
+![CI](https://github.com/olivierlabayle/NonNegLeastSquaresMLJInterface.jl/blob/main/.github/workflows/main.yml/badge.svg)
+
 # NonNegLeastSquaresMLJInterface.jl
 
 A MLJ Interface to the [NonNegLeastSquares.jl](https://github.com/ahwillia/NonNegLeastSquares.jl) package.
