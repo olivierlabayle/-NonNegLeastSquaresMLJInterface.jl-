@@ -1,4 +1,5 @@
 ![CI](https://github.com/olivierlabayle/NonNegLeastSquaresMLJInterface.jl/actions/workflows/main.yml/badge.svg)
+[![codecov](https://codecov.io/gh/olivierlabayle/NonNegLeastSquaresMLJInterface.jl/branch/main/graph/badge.svg?token=L6I102JZ9L)](https://codecov.io/gh/olivierlabayle/NonNegLeastSquaresMLJInterface.jl)
 
 # NonNegLeastSquaresMLJInterface.jl
 
